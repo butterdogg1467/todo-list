@@ -1,5 +1,5 @@
 import '../styles/styles.css';
-import createTask from './createtask';
+import createTask,{ taskCount } from './createtask';
 
 let defaultProjects = document.querySelector('.projects')
 let addTaskDefault = document.querySelector('.addprojectbutton')

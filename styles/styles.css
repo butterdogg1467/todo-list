@@ -3,15 +3,15 @@
 }
 
 body {
-    padding: 0px;
+    height: 100vh;
+    padding-top: 100px;
 }
 
 .projects {
-    border: double black 2px;
-    width: 100%;
+    width: fit-content;
     height: 300px;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(9, 200px);
     grid-template-rows: repeat(2, 100%);
     grid-auto-rows: 100%;
     grid-auto-columns: 10px;
@@ -22,10 +22,9 @@ body {
     font-weight:bolder;
     appearance: none;
     border: none;
-    width: 50px;
-    height: 300px;
     font-size: 45px;
     padding-bottom: 25px;
+    grid-column: 1/2;
 }
 
 .addprojectbutton:hover {
