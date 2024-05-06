@@ -35,4 +35,7 @@ body {
     background-color: white;
     border: double black 2px;
     width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
