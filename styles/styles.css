@@ -35,7 +35,46 @@ body {
     background-color: white;
     border: double black 2px;
     width: 200px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.tasktitle {
+    margin-top: 20px;
+    grid-column: 1/3;
+}
+
+.taskdate {
+    margin-top: 20px;
+    grid-column: 1/3;
+}
+
+.tasknote {
+    margin-top: 20px;
+    grid-column: 1/3;
+    grid-row: 3/6;
+}
+
+.editbutton {
+    grid-row: 7/8;
+    appearance: none;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    transition: ease-in-out 0.25s background-color;
+}
+
+.savebutton {
+    grid-row: 7/8;
+    appearance: none;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    transition: ease-in-out 0.25s background-color;
+}
+
+.editbutton:hover,
+.savebutton:hover {
+    background-color: rgb(207, 207, 207)
 }

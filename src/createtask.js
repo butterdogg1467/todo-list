@@ -11,6 +11,7 @@ export default function createTask() {
         defaultProjects.appendChild(taskBackground)
 
         let taskTitle = document.createElement('input')
+        taskTitle.placeholder = 'Task Name'
         taskTitle.classList.add('tasktitle')
         taskBackground.appendChild(taskTitle)
 
@@ -19,9 +20,21 @@ export default function createTask() {
         taskDate.classList.add('taskdate')
         taskBackground.appendChild(taskDate)
 
-        let taskNote = document.createElement('input')
+        let taskNote = document.createElement('textarea')
+        taskNote.placeholder = 'Notes'
+        taskNote.rows = 10
         taskNote.classList.add('tasknote')
         taskBackground.appendChild(taskNote)
+
+        let editButton = document.createElement('button')
+        editButton.classList.add('editbutton')
+        editButton.textContent = 'Edit'
+        taskBackground.appendChild(editButton)
+
+        let saveButton = document.createElement('button')
+        saveButton.classList.add('savebutton')
+        saveButton.textContent = 'Save'
+        taskBackground.appendChild(saveButton)
     } else if (taskCount >= 63) {
         return
     }
