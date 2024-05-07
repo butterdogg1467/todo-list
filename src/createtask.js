@@ -27,15 +27,10 @@ export default function createTask() {
         taskNote.classList.add('tasknote')
         taskBackground.appendChild(taskNote)
 
-        let editButton = document.createElement('button')
-        editButton.classList.add('editbutton')
-        editButton.textContent = 'Edit'
-        taskBackground.appendChild(editButton)
-
-        let saveButton = document.createElement('button')
-        saveButton.classList.add('savebutton')
-        saveButton.textContent = 'Save'
-        taskBackground.appendChild(saveButton)
+        let deleteButton = document.createElement('button')
+        deleteButton.classList.add('deletebutton')
+        deleteButton.textContent = 'Delete'
+        taskBackground.appendChild(deleteButton)
 
     } else if (taskCount >= 63) {
         return
@@ -43,4 +38,4 @@ export default function createTask() {
     
 }
 
-    // export { taskCount, taskDate, taskNote, taskTitle, saveButton, editButton }
+    export { taskCount }
