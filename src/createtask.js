@@ -3,6 +3,7 @@ import { defaultProjects } from "."
 let taskCount;
 taskCount = 0
 
+
 export default function createTask() {
     taskCount++
     if (taskCount < 63) {
@@ -35,10 +36,11 @@ export default function createTask() {
         saveButton.classList.add('savebutton')
         saveButton.textContent = 'Save'
         taskBackground.appendChild(saveButton)
+
     } else if (taskCount >= 63) {
         return
     }
     
 }
 
-export { taskCount }
+    // export { taskCount, taskDate, taskNote, taskTitle, saveButton, editButton }
