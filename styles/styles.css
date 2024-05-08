@@ -33,7 +33,7 @@ body {
 
 .taskbackground {
     background-color: white;
-    border: double black 2px;
+    border: solid black 0.5px;
     width: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -49,6 +49,7 @@ body {
     border: none;
     appearance: none;
     color: black;
+    outline: none;
 }
 
 .taskdate {
@@ -60,6 +61,7 @@ body {
     border: none;
     appearance: none;
     color: black;
+    outline: none;
 }
 
 .tasknote {
@@ -72,6 +74,8 @@ body {
     border: none;
     appearance: none;
     color: black;
+    outline: none;
+    resize: none;
 }
 
 .deletebutton {

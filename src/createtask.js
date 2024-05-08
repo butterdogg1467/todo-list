@@ -32,10 +32,18 @@ export default function createTask() {
         deleteButton.textContent = 'Delete'
         taskBackground.appendChild(deleteButton)
 
+        function deleteTask() {
+            defaultProjects.removeChild(taskBackground)
+        }
+
+        deleteButton.addEventListener('click', deleteTask)
+        
+        return taskBackground 
+
     } else if (taskCount >= 63) {
         return
     }
-    
+
 }
 
-    export { taskCount }
+export { taskCount }
