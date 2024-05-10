@@ -27,6 +27,27 @@ export default function createTask() {
         taskNote.classList.add('tasknote')
         taskBackground.appendChild(taskNote)
 
+        let markAsDoneButton = document.createElement('button')
+        markAsDoneButton.classList.add('markasdonebutton')
+        markAsDoneButton.style.backgroundColor = 'rgb(190, 37, 37)'
+        markAsDoneButton.style.color = 'white'
+        markAsDoneButton.textContent = 'Not Done'
+        taskBackground.appendChild(markAsDoneButton)
+
+        function markAsDone() {
+            if (markAsDoneButton.textContent === 'Not Done') {
+                markAsDoneButton.textContent = 'Done'
+                markAsDoneButton.style.backgroundColor = 'green'
+                markAsDoneButton.style.color = 'white'
+            } else if (markAsDoneButton.textContent === 'Done') {
+                markAsDoneButton.textContent = 'Not Done'
+                markAsDoneButton.style.backgroundColor = 'rgb(190, 37, 37)'
+                markAsDoneButton.style.color = 'white'
+            }
+        }
+
+        markAsDoneButton.addEventListener('click', markAsDone)
+
         let deleteButton = document.createElement('button')
         deleteButton.classList.add('deletebutton')
         deleteButton.textContent = 'Delete'
