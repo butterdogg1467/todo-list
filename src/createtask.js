@@ -6,7 +6,6 @@ taskCount = 0
 
 export default function createTask() {
     taskCount++
-    if (taskCount < 63) {
         let taskBackground = document.createElement('div')
         taskBackground.classList.add('taskbackground')
         defaultProjects.appendChild(taskBackground)
@@ -61,9 +60,7 @@ export default function createTask() {
         
         return taskBackground 
 
-    } else if (taskCount >= 63) {
-        return
-    }
+     
 
 }
 

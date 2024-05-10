@@ -20,6 +20,20 @@ body {
     gap: 5px;
 }
 
+
+.defaulttasks {
+    width: fit-content;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(8, 200px);
+    grid-template-rows: 100%;
+    grid-auto-rows: 100%;
+    grid-auto-columns: 200px;
+    gap: 5px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
 .addtaskbutton {
     font-weight:bolder;
     appearance: none;

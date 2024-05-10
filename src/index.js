@@ -1,7 +1,7 @@
 import '../styles/styles.css';
 import createTask from './createtask';
 
-let defaultProjects = document.querySelector('.projects')
+let defaultProjects = document.querySelector('.defaulttasks')
 let addTaskDefault = document.querySelector('.addtaskbutton')
 let defaultProjectsTitle = document.querySelector('#defaultprojectstitle')
 
