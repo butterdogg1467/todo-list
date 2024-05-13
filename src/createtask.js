@@ -1,4 +1,4 @@
-import { defaultProjects } from "."
+import { projects, defaultTasks } from "."
 
 let taskCount;
 taskCount = 0
@@ -8,7 +8,7 @@ export default function createTask() {
     taskCount++
         let taskBackground = document.createElement('div')
         taskBackground.classList.add('taskbackground')
-        defaultProjects.appendChild(taskBackground)
+        defaultTasks.appendChild(taskBackground)
 
         let taskTitle = document.createElement('input')
         taskTitle.placeholder = 'Task Name'
@@ -53,7 +53,7 @@ export default function createTask() {
         taskBackground.appendChild(deleteButton)
 
         function deleteTask() {
-            defaultProjects.removeChild(taskBackground)
+            defaultTasks.removeChild(taskBackground)
         }
 
         deleteButton.addEventListener('click', deleteTask)
