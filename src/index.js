@@ -6,18 +6,9 @@ let projects = document.querySelector('.projects')
 let addTaskDefault = document.querySelector('.defaultaddtaskbutton')
 let defaultProjectsTitle = document.querySelector('#defaultprojectstitle')
 let createProjectBtn = document.querySelector('.addprojectbutton')
-let defaultTasks = document.querySelector('.defaulttasks')
-
+let tasks = document.querySelector('.defaulttasks')
 
 defaultProjectsTitle.addEventListener('change', function() {
-    addTaskDefault.textContent = 'Add Task to ' + defaultProjectsTitle.value
-})
-
-addTaskDefault.addEventListener('mouseover', function() {
-    addTaskDefault.textContent = '+'
-})
-
-addTaskDefault.addEventListener('mouseleave', function() {
     addTaskDefault.textContent = 'Add Task to ' + defaultProjectsTitle.value
 })
 
@@ -25,5 +16,6 @@ createProjectBtn.addEventListener('click', createProject)
 
 addTaskDefault.addEventListener('click', createTask)
 
-export { projects, defaultTasks }
+
+export { projects, tasks }
 

@@ -59,6 +59,8 @@ body {
     grid-column: 1/2;
 }
 
+
+
 .addtaskbutton {
     font-weight:bolder;
     appearance: none;
@@ -75,7 +77,8 @@ body {
     font-size: 15px;
 }
 
-.addtaskbutton:hover {
+.addtaskbutton:hover,
+.defaultaddtaskbutton:hover {
     filter:brightness(0.9);
 }
 
