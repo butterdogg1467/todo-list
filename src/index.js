@@ -14,7 +14,9 @@ defaultProjectsTitle.addEventListener('change', function() {
 
 createProjectBtn.addEventListener('click', createProject)
 
-addTaskDefault.addEventListener('click', createTask)
+addTaskDefault.addEventListener('click', function(){
+    createTask(tasks)
+})
 
 
 export { projects, tasks }

@@ -3,12 +3,12 @@ import { projects, tasks } from "."
 let taskCount;
 taskCount = 0
 
-
-export default function createTask() {
+export default function createTask(taskBox) {
+   
     taskCount++
         let taskBackground = document.createElement('div')
         taskBackground.classList.add('taskbackground')
-        tasks.appendChild(taskBackground)
+        taskBox.appendChild(taskBackground)
 
         let taskTitle = document.createElement('input')
         taskTitle.placeholder = 'Task Name'
@@ -53,15 +53,12 @@ export default function createTask() {
         taskBackground.appendChild(deleteButton)
 
         function deleteTask() {
-            tasks.removeChild(taskBackground)
+            taskBox.removeChild(taskBackground)
         }
 
         deleteButton.addEventListener('click', deleteTask)
         
         return taskBackground 
-
-     
-
 }
 
 export { taskCount }
